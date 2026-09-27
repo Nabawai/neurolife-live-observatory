@@ -1,0 +1,17 @@
+{
+  "name": "neurolife-github-live-observatory",
+  "version": "24.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Private GitHub Actions observatory for live NeuroLife visual/runtime auditing.",
+  "scripts": {
+    "audit": "node src/audit.mjs",
+    "publish:safe": "node scripts/publish-safe-status.mjs",
+    "validate": "node scripts/validate-config.mjs"
+  },
+  "dependencies": {
+    "pixelmatch": "^6.0.0",
+    "playwright": "^1.55.0",
+    "pngjs": "^7.0.0"
+  }
+}
