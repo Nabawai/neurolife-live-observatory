@@ -1,0 +1,77 @@
+{
+  "schema": "NL_GITHUB_OBSERVATORY_ROUTE_MATRIX_1",
+  "routes": [
+    {
+      "id": "public-home",
+      "label": "Public Home",
+      "kind": "public",
+      "url": "https://neurolife.cloud/",
+      "critical": true
+    },
+    {
+      "id": "portal-discover",
+      "label": "Control Plane Home",
+      "kind": "control",
+      "suffix": "?op=discover&view=html",
+      "critical": true
+    },
+    {
+      "id": "portal-update-action-center",
+      "label": "Update Action Center",
+      "kind": "control",
+      "suffix": "?op=update_action_center&view=html",
+      "critical": true
+    },
+    {
+      "id": "portal-status",
+      "label": "Control Plane Status",
+      "kind": "control",
+      "suffix": "?op=status&view=html",
+      "critical": true
+    },
+    {
+      "id": "portal-scheduler",
+      "label": "Autonomous Scheduler",
+      "kind": "control",
+      "suffix": "?op=autonomous_scheduler_status&view=html",
+      "critical": false
+    },
+    {
+      "id": "portal-current-truth",
+      "label": "Native Current Truth",
+      "kind": "control",
+      "suffix": "?op=native_current_truth&view=html",
+      "critical": true
+    }
+  ],
+  "control_json": [
+    {
+      "id": "developer-handoff",
+      "suffix": "?op=developer_handoff&format=json"
+    },
+    {
+      "id": "native-current-truth",
+      "suffix": "?op=native_current_truth&format=json"
+    },
+    {
+      "id": "runtime-truth",
+      "suffix": "?op=runtime_truth&format=json"
+    },
+    {
+      "id": "reg907",
+      "suffix": "?op=reg907_guard&format=json"
+    },
+    {
+      "id": "updater-status",
+      "suffix": "?op=updater_status&format=json"
+    },
+    {
+      "id": "full-health",
+      "suffix": "?op=full_health&format=json"
+    },
+    {
+      "id": "pull-bridge-status",
+      "suffix": "?op=pull_bridge_status&format=json"
+    }
+  ]
+}

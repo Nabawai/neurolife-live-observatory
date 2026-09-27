@@ -1,0 +1,28 @@
+{
+  "viewports": [
+    {
+      "id": "android-small",
+      "width": 360,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    {
+      "id": "android-medium",
+      "width": 412,
+      "height": 915,
+      "deviceScaleFactor": 1
+    },
+    {
+      "id": "tablet",
+      "width": 768,
+      "height": 1024,
+      "deviceScaleFactor": 1
+    },
+    {
+      "id": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "deviceScaleFactor": 1
+    }
+  ]
+}

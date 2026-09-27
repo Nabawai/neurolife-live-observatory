@@ -1,0 +1,29 @@
+{
+  "schema": "NL_OBSERVATORY_SAFE_INTERACTIONS_1",
+  "interactions": [
+    {
+      "id": "discover-to-update-center",
+      "start_suffix": "?op=discover&view=html",
+      "selector": "a[href*='op=update_action_center']",
+      "expect_url_contains": "op=update_action_center"
+    },
+    {
+      "id": "discover-to-status",
+      "start_suffix": "?op=discover&view=html",
+      "selector": "a[href*='op=status']",
+      "expect_url_contains": "op=status"
+    },
+    {
+      "id": "discover-to-scheduler",
+      "start_suffix": "?op=discover&view=html",
+      "selector": "a[href*='op=autonomous_scheduler_status']",
+      "expect_url_contains": "op=autonomous_scheduler_status"
+    },
+    {
+      "id": "discover-to-truth",
+      "start_suffix": "?op=discover&view=html",
+      "selector": "a[href*='op=native_current_truth']",
+      "expect_url_contains": "op=native_current_truth"
+    }
+  ]
+}

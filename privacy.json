@@ -1,0 +1,30 @@
+{
+  "schema": "NL_OBSERVATORY_PRIVACY_1",
+  "redact_selectors": [
+    "input",
+    "textarea",
+    "[data-private]",
+    "[data-sensitive]",
+    ".patient-name",
+    ".patient-phone",
+    ".patient-email",
+    ".patient-id",
+    ".medical-record-number",
+    ".national-id"
+  ],
+  "secret_key_patterns": [
+    "secret",
+    "token",
+    "password",
+    "passwd",
+    "authorization",
+    "cookie",
+    "private_key",
+    "hmac",
+    "credential",
+    "session"
+  ],
+  "string_patterns": [
+    "NLB-[A-Za-z0-9_-]+"
+  ]
+}
