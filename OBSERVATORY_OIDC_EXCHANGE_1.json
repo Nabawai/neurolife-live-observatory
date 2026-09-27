@@ -1,0 +1,27 @@
+{
+  "schema": "NL_OBSERVATORY_OIDC_EXCHANGE_CONTRACT_1",
+  "issuer": "https://token.actions.githubusercontent.com",
+  "audience": "neurolife-observatory",
+  "allowed_repository": "Nabawai/neurolife-live-observatory",
+  "allowed_ref": "refs/heads/main",
+  "scope": "OBSERVATORY_READ_ONLY",
+  "max_ttl_seconds": 900,
+  "response": {
+    "ok": true,
+    "connect_url": "https://neurolife.cloud/connect.php/NLB-<EPHEMERAL>",
+    "expires_at": "ISO-8601"
+  },
+  "required_server_guards": [
+    "VERIFY_GITHUB_OIDC_SIGNATURE",
+    "VERIFY_ISSUER",
+    "VERIFY_AUDIENCE",
+    "VERIFY_REPOSITORY_CLAIM",
+    "VERIFY_REF_OR_ENVIRONMENT",
+    "VERIFY_EXP_NBF_IAT",
+    "ANTI_REPLAY_JTI",
+    "READ_ONLY_SCOPE_ONLY",
+    "NO_APPLY_ARM_COMMIT_MUTATION",
+    "SHORT_TTL_MAX_900_SECONDS",
+    "AUDIT_RECEIPT_WITHOUT_TOKEN_VALUE"
+  ]
+}
